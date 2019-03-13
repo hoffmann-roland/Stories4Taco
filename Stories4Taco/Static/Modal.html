@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../Content/modal.css">
+</head>
+<body>
+    <div class="boardItemContainer" data-bind="foreach: goals">
+        <div>
+            <div class="boardItem goal" data-bind="text: Name"></div>
+            <div class="userStepsContainer" data-bind="foreach: UserSteps">
+                <div class="boardItem" data-bind="text: Name"></div>
+            </div>
+        </div>
+    </div>
+    <div data-bind="foreach: { data: $root.releases, as: 'release' }">
+        <div class="goalsContainer" data-bind="foreach: Goals">
+            <div class="userStoryOuterContainer" data-bind="foreach: { data: UserSteps, as: 'userStep' }">
+                <div class="userStoryConatiner" data-bind="foreach: UserStories">
+                    <div class="boardItem story" data-bind="text: Name"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../Scripts/knockout-3.5.0.js"></script>
+    <script src="../Scripts/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿.boardItem {
+    background: rgba(255, 255, 0, 0.3);
+    width: 100px;
+    height: 100px;
+}
+
+    .boardItem.goal {
+        background: rgba(0, 0, 255, 0.3);
+    }
+
+    .boardItem.story {
+        background: rgba(0, 255, 0, 0.3);
+    }
+
+.userStoryConatiner {
+    width: 100px;
+}
+
+.goalsContainer, .releasesContainer, .boardItemContainer, .userStepsContainer {
+    display: flex;
+}
+
+.userStoryOuterContainer {
+    display: flex;
+    min-width: 100px;
+}
