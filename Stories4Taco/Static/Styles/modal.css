@@ -2,6 +2,7 @@
     background: rgba(255, 255, 0, 0.3);
     width: 100px;
     height: 100px;
+    margin: 3px;
 }
 
     .boardItem.goal {
@@ -13,14 +14,27 @@
     }
 
 .userStoryConatiner {
-    width: 100px;
+    width: 106px;
 }
 
-.goalsContainer, .releasesContainer, .boardItemContainer, .userStepsContainer {
+.releasesContainer, .userStepsContainer {
     display: flex;
+}
+.boardItemContainer{
+    display: flex;
+    margin-left: 100px;
+}
+
+.goalsContainer {
+    display: flex;
+    margin-left: 100px;
 }
 
 .userStoryOuterContainer {
     display: flex;
-    min-width: 100px;
+    min-width: 106px;
+}
+
+.storyMap{
+    margin: 20px;
 }

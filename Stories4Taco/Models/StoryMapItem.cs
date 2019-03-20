@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace Stories4Taco.Models
 {
-    public class Release
+    public abstract class StoryMapItem
     {
         public int Id { get; set; }
         public string Name { get; set; }

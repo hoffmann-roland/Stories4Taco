@@ -17,8 +17,8 @@ namespace Stories4Taco.Controllers
             using (var db = new Context())
             {
 
-                List<Goal> goals = db.Goals.Include(x => x.UserSteps).ToList();
-                List<Release> releases = db.Releases.Include(x => x.UserStories).ToList();
+                List<Goal> goals = db.Goals.Include(x => x.UserSteps.Select(step => step.UserStories.Select(story => story.Release))).ToList();
+                List<Release> releases = db.Releases.ToList();
 
                 return new { goals = goals, releases = releases };
             }

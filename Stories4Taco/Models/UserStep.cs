@@ -6,17 +6,8 @@ using System.Web;
 
 namespace Stories4Taco.Models
 {
-    public class UserStep
+    public class UserStep: StoryMapItem
     {
-        [Key]
-        public int Id { get; set; }
-        public string Name { get; set; }
-
-        //[ForeignKey("Goal")]
-        public int GoalId { get; set; }
-        //public virtual Goal Goal { get; set; }
-
-        //[ForeignKey("UserStepId")]
-        //public virtual ICollection<UserStory> UserStories { get; set; }
+        public virtual ICollection<UserStory> UserStories { get; set; }
     }
 }

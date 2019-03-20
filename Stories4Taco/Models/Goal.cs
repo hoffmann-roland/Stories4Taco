@@ -7,13 +7,8 @@ using System.Web;
 
 namespace Stories4Taco.Models
 {
-    public class Goal
+    public class Goal: StoryMapItem
     {
-        [Key]
-        public int Id { get; set; }
-        public string Name { get; set; }
-
-        [ForeignKey("GoalId")]
         public virtual ICollection<UserStep> UserSteps { get; set; }
     }
 }

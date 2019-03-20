@@ -144,24 +144,19 @@
     <Compile Include="Models\Context.cs" />
     <Compile Include="Models\Goal.cs" />
     <Compile Include="Models\Release.cs" />
+    <Compile Include="Models\StoryMapItem.cs" />
     <Compile Include="Models\UserStep.cs" />
     <Compile Include="Models\UserStory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\modal.css" />
+    <Content Include="Static\Styles\modal.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Scripts\index.js" />
-    <Content Include="Scripts\jquery-3.3.1.js" />
-    <Content Include="Scripts\jquery-3.3.1.min.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.js" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
-    <Content Include="Scripts\knockout-3.5.0.js" />
-    <Content Include="Scripts\modal.js" />
+    <Content Include="Static\Scripts\index.js" />
     <Content Include="Static\Index.html" />
     <Content Include="Static\Modal.html" />
+    <Content Include="Static\Scripts\modal.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -175,8 +170,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
